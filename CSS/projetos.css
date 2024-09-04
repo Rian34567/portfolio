@@ -1,0 +1,128 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização do corpo */
+body {
+    background: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilização do header */
+header {
+    background: linear-gradient(135deg, #211992, #b0b4b9);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header .logo {
+    width: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .logo:hover {
+    transform: scale(1.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #646262;
+}
+
+/* Estilização da seção de projetos */
+.projetos {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #93929e, #193c5f);
+    color: #ffffff;
+}
+
+.projetos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.projetos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.projetos p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.projetos-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projetos-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilização do footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .projetos-item img {
+        width: 100%;
+    }
+}
